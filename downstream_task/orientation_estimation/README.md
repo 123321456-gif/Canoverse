@@ -1,0 +1,39 @@
+# VI-Net For Orientation Estimation.
+
+Modified from the official implementation of [VI-Net](https://github.com/JiehongLin/VI-Net)
+
+## Requirements
+The code has been tested with:
+- Python 3.10.19
+- PyTorch 2.0.0
+- CUDA 11.8.0
+
+Other dependencies:
+
+```bash
+sh dependencies.sh
+```
+
+## Data
+
+## CheckPoint
+Please download from [here](https://drive.google.com/file/d/1BLgDAmEjdgQGOugmkfc0lYxMGM8a6LuA/view?usp=drive_link).
+
+
+
+## Network Training
+
+
+Train VI-Net for rotation estimation:
+
+```
+python vinet_train.py
+```
+
+## Evaluation
+
+To test the model, please run:
+
+```
+python vinet_test.py
+```
