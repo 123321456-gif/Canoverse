@@ -18,7 +18,7 @@ We developed a large-scale dataset containing 320k samples—a size that exceeds
 ## Comparison with [COD](https://github.com/JinLi998/CanonObjaverseDataset)
 We achieve better canonicalization quality compared to COD.
 <div style="text-align: center;">
-  <img src="asset/cod_compare.png" alt="" width="100%"> 
+  <img src="asset/cod_compare.png" alt="" width="100%">
 </div>
 
 We also perform inter-class alignment, whereas COD does not.

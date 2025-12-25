@@ -17,10 +17,6 @@ sh dependencies.sh
 
 For testing, please download the test dataset from [here](https://huggingface.co/datasets/kongbai1aa/canoverse/blob/main/canoverse_test.zip) and place it in the `dataset` directory.
 
-## CheckPoint
-Please download from [here](https://drive.google.com/file/d/1BLgDAmEjdgQGOugmkfc0lYxMGM8a6LuA/view?usp=drive_link).
-
-
 
 ## Network Training
 
