@@ -1,3 +1,4 @@
+
 # 🌟 CanoVerse
 Welcome to CanoVerse! 🎉 This repository contains 320k canonical data from Objaverse and Objaverse-XL.
 
@@ -7,6 +8,11 @@ Welcome to CanoVerse! 🎉 This repository contains 320k canonical data from Obj
 <div style="text-align: center;">
   <img src="asset/teaser.png" alt="" width="100%">
 </div>
+
+# ⚠️ News
+
+🔄 **Current Release**: We currently release complete dataset of CanoVerse.  
+
 
 # 📋 Overview
 Our method provides an effective approach for 3D object canonicalization, as illustrated in the diagram below:
@@ -64,14 +70,11 @@ Our rotation and classification information is stored in the `canoverse_anno/can
 
 Follow these steps to use the CanoVerse dataset in your research:
 
-1. 📋 **Get UIDs**: Refer to the `canoverse_anno/canoverse_poses_32k.json` file to obtain the unique identifiers (UIDs) of CanoVerse objects.
+1. 📋 **Get UIDs**: Refer to the `canoverse_anno/canoverse_poses_part00*.json` file to obtain the unique identifiers (UIDs) of CanoVerse objects.
 2. 📥 **Download Meshes**: Download 3D meshes from [Objaverse](https://objaverse.allenai.org/docs/intro) using the UIDs according to their official documentation.
-3. 🔄 **Convert Format**: Convert the file format to `.obj` files using `trimesh` and `Blender`.
+3. 🔄 **Convert Format**: Convert the file format to `.obj` or `.glb` files using `trimesh` and `Blender`.
 4. ⚖️ **Normalize**: Normalize the translation and scale. 
-5. 🔧 **Apply Rotation**: Apply the rotation matrix from `canoverse_anno/canoverse_poses_32k.json` to the mesh. This file also contains category information.
+5. 🔧 **Apply Rotation**: Apply the rotation matrix from `canoverse_anno/canoverse_poses_part00*.json` to the mesh. This file also contains category information.
 6. 🔧 You can refer to `utils/cano_mesh.py` for implementation details of step 4 and 5.
 
-## ⚠️ Important Note
 
-🔄 **Current Release**: We currently release only a subset of CanoVerse.  
-🚀 **Future Release**: The complete dataset will be released in the future.
