@@ -40,7 +40,7 @@ Additionally, we perform inter-class alignment, whereas [COD]((https://github.co
 
 
 ## 📚 Dataset Usage
-Our rotation and classification information is stored in the `canoverse_anno/canoverse_poses_32k.json` file. The internal information is as follows:
+Our rotation and classification information is stored in the `canoverse_anno/canoverse_poses_part00*.json` file. The internal information is as follows:
 ```json
 {
 "cead797bdcf84abfb1cf91f5113b676a": {   // Object UID in Objaverse and Objaverse-XL
@@ -77,4 +77,8 @@ Follow these steps to use the CanoVerse dataset in your research:
 5. 🔧 **Apply Rotation**: Apply the rotation matrix from `canoverse_anno/canoverse_poses_part00*.json` to the mesh. This file also contains category information.
 6. 🔧 You can refer to `utils/cano_mesh.py` for implementation details of step 4 and 5.
 
-
+### Download Directly 
+In addition to the usage method mentioned above, we have uniformly preprocessed all mesh files into GLB format. (If you require the original raw mesh data, please download it directly from the official Objaverse website and process it with the JSON files.)
+[Dataset](https://www.modelscope.cn/datasets/kongbai11A/my_dataset/files)
+You need to first use the Linux `cat` command to concatenate files with identical prefixes in numerical order to form a complete file, then extract them one by one.
+Extraction password: `X)SRY<kG`
